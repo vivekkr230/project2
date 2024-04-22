@@ -1,0 +1,64 @@
+#page2{
+    position: absolute;
+}
+#moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+#con{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+}
+#moving-text h1{
+    display: inline-block;
+    font-size: 19vh;
+}
+#gola{
+    background-color: indianred;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#rotate{
+    height: 100vh;
+    width:100% ;
+    position: relative;
+}
+#redcircle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    background: linear-gradient(to top right,red,blue);
+    animation-name: gooey;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+@keyframes gooey{
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(30deg);
+    }
+}

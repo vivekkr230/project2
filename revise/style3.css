@@ -1,0 +1,35 @@
+#home{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.container1{
+    height: 150px;
+    width: 100%;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container1 h2{
+    font-size: 5vw;
+    padding: 2vw 2vw;
+    position: relative;
+    z-index: 9;
+}
+.container1 .overlay{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transform: all ease 0.3s;
+    position: absolute;
+    background-color: brown;
+    top: -100%;
+    left: 0%;
+}
+.container1:hover .overlay{
+    top: 0%;
+}
+#gap{
+    height: 500px;
+}
